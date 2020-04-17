@@ -3,7 +3,14 @@ I2C driver for a keyboard matrix of up to 4x4 keys, using an ATmega microcontrol
 
 4x4 keyboard matrix are used by many hacks for manual input. However, they require up to 8 I/O channels and continuously running software routines on the host system. This project eliminates the burden from the host system by encapsulating the management of the keyboard matrix to a dedicated ATmega328. The host system communicates with the keyboard matrix via a I2C interface. By the way we have added up to 4 LEDs available via I2C so that the host can set or kill light depending on any action.
 
-Target platform: ATmega328, used as I2C slave
+Target platform: ATmega328, running as I2C slave. The ATmega uses the internal clock at 8 MHz. 
+Pin assignments: 
+PD0 ... PD3: Keyboard columns
+PD4 ... PD7: Keyboard rows
+PC0 ... PC3: up to 4 LEDs
+PB0: piezo buzzer
+PC4: I2C SDA
+PC5: I2C SCL
 
 I2C Interface:
 Default I2C address: 0x5f, defined in “main.c”, can be changed to any valid I2C address.
