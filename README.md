@@ -3,7 +3,7 @@ I2C driver for a keyboard matrix of up to 4x4 keys, using an ATmega microcontrol
 SLW - April 2020
 
 4x4 keyboard matrix are used by many hacks for manual input. However, they require up to 8 I/O channels and continuously running software routines on the host system. This project eliminates the burden from the host system by encapsulating the management of the keyboard matrix to a dedicated ATmega328. The host system communicates with the keyboard matrix via a I2C interface. By the way we have added up to 4 LEDs available via I2C so that the host can set or kill light depending on any action.
-Any system capable of operating as I2C master may serve as a host. Typically this would be Arduino or Raspberry Pi. I2C interface speed should be in the range of 100 to 400 kHz.
+Any system capable of operating as I2C master may serve as a host. Typically, this would be Arduino or Raspberry Pi. I2C interface speed should be in the range of 100 to 400 kHz.
 
 --------------------------------------------------------------------------------------------------------------------
 Files in this repository:
@@ -18,7 +18,7 @@ Files in this repository:
   - I2C-Keyboard.elf
   - I2C-Keyboard.hex
   - i2c-Keyboard.cproj (Atmel Studio project file)
-- Arduino Circuit Diagram and fots showing an example
+- Arduino Circuit Diagram and fotos of a built with hole grid board: 
   - I2C-Keyboard-Circuit.jpg
   - I2C-Keyboard-foto_0.jpg
   - I2C-Keyboard-foto_1.jpg
@@ -28,7 +28,7 @@ Files in this repository:
   - KeyBoard_I2C.h
 
 --------------------------------------------------------------------------------------------------------------------
-Target platform: ATmega328, running as I2C slave. The ATmega uses the internal clock at 8 MHz. The software was compiled with Atmel Studio 7
+Target platform: ATmega328, running as I2C slave. The ATmega uses the internal clock at 8 MHz. The software was compiled with Atmel Studio 7. 
 ATmega Pin assignments: 
 - PD0 ... PD3: Keyboard columns
 - PD4 ... PD7: Keyboard rows
