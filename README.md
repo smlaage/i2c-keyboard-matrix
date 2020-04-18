@@ -9,7 +9,7 @@ Any system capable of operating as I2C master may serve as a host. Typically, th
 --------------------------------------------------------------------------------------------------------------------
 Files in this repository:
 - Readme.md: this file
-- I2C-Keyboard-Atmel-Porject.zip: Atmel project files for Atmel Studio 7
+- I2C-Keyboard-Atmel-Project.zip: Atmel project files (including readily compiled HEX and ELF) for Atmel Studio 7
 - Arduino Circuit Diagram and fotos of a built with hole grid board: 
   - I2C-Keyboard-Circuit.jpg
   - I2C-Keyboard-foto_0.jpg
